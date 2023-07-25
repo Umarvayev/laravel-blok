@@ -15,6 +15,9 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <!-- Style -->
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -76,5 +79,10 @@
             @yield('content')
         </main>
     </div>
+
+
+
+<!-- Script -->
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>

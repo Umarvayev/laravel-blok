@@ -42,7 +42,7 @@ class CategoryaFormRequest extends FormRequest
 
             'image' =>
                 [
-                    'required',
+                    'nullable',
                     'mimes:jpeg,jpg,png'
                 ],
 
@@ -67,14 +67,12 @@ class CategoryaFormRequest extends FormRequest
 
             'navbar_status' =>
                 [
-                    'nullable',
-                    'boolean'
+                    'nullable'
                 ],
 
             'status' =>
                 [
-                    'nullable',
-                    'boolean'
+                    'nullable'
                 ]
         ];
         return $rules;
